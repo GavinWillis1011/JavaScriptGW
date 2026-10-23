@@ -70,3 +70,7 @@ console.log(shortFoodNames);
 
 // 10. STRETCH: Find the longest food name and print:
 // "The longest food name in the list is ______ with ___ characters."
+let longestFoodName = friendFavorites.reduce((longest, current) => {
+    return current.length > longest.length ? current : longest;
+}, "");
+console.log("The longest food name in the list is " + longestFoodName + " with " + longestFoodName.length + " characters.");
