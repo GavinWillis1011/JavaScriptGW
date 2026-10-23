@@ -7,7 +7,7 @@ let favoriteFoods = ["Pizza", "Tacos", "Spaghetti", "Dairy-Free Ice Cream", "Chi
 
 for (let i = 0; i < favoriteFoods.length; i++) {
    console.log("One of my favorite foods is " + favoriteFoods[i] + ".")
-
+};
 
 
 // 3. Print out the rating for each food with a ranking like:
