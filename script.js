@@ -52,19 +52,21 @@ const foodsWithA = friendFavorites.filter(food => food.toLowerCase().includes('a
 
 // 6. Store the result in an array called foodsWithA. Print out the array.
 
-
+printFoodRecommendation(foodsWithA);
 
 // 7. Create a new array longFoodNames for foods with names longer than 6 characters.
-
+let longFoodNames = friendFavorites.filter(food => food.length > 6);
 
 
 // 8. Create another array shortFoodNames for foods 6 characters or shorter.
+let shortFoodNames = friendFavorites.filter(food => food.length <= 6);
 
 
 
 // 9. Print both arrays and compare:
 // "There are more long-named foods." OR "There are more short-named foods."
-
+printFoodRecommendation(longFoodNames);
+printFoodRecommendation(shortFoodNames);  
 
 // 10. STRETCH: Find the longest food name and print:
 // "The longest food name in the list is ______ with ___ characters."
